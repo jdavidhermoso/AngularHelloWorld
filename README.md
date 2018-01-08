@@ -1,5 +1,7 @@
 # HelloWorld
 
+I am using this repo to this Udemy Angular Course: https://www.udemy.com/angular-2-fernando-herrera/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
