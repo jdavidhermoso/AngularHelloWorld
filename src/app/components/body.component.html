@@ -1,3 +1,21 @@
-<h1> Name: {{name}}</h1>
-<h3> Surname: {{surname}}</h3>
+<div class="row">
+  <div class="col-md-6">
+    <button type="button" class="btn btn-outline-primary block toggle-quote-btn" (click)="showQuote = !showQuote">
+      Toggle quote
+    </button>
 
+    <div *ngIf="showQuote" class="card card-inverse card-primary mb-3 text-center">
+      <div class="card-block">
+        <blockquote class="card-blockquote">
+          <p> {{ text.message}} </p>
+          <footer> {{ text.author }} in <cite title="Source Title"> Spiderman </cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <ul class="list-group">
+      <li *ngFor="let character of characters; let i = index" class="list-group-item"> {{i + 1}}. {{character}} </li>
+    </ul>
+  </div>
+</div>
